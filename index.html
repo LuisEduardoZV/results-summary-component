@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<title>Frontend Mentor | Results summary component</title>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<script src="./assets/js/tailwind.js"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						screens: {
+							xs: { max: '375px' },
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body>
+		<div class="flex flex-row xs:flex-col w-1/2 xs:w-full mainContainer mt-24 xs:mt-0 p-0">
+			<div class="flex flex-col w-1/2 xs:w-full justify-between align-center text-center leftContainer place-items-center">
+				<h1>Your Result</h1>
+				<div id="point" class="flex flex-col w-fit h-fit">
+					<h1>76</h1>
+					<p>of 100</p>
+				</div>
+				<div id="description" class="flex flex-col h-fit w-8/12 mb-7">
+					<h2>Great</h2>
+					<p>You scored higher than 65% of the people who have taken these tests.</p>
+				</div>
+			</div>
+			<div class="flex flex-col w-1/2 xs:w-full h-full p-10 rightContainer">
+				<h1>Summary</h1>
+				<div class="grid w-full h-fit mt-7 align-center place-items-center">
+					<div class="flex flex-row w-full justify-between justify-center item bg-red-50 p-3 rounded-lg mb-4">
+						<div class="flex flex-row h-fit">
+							<img src="./assets/images/icon-reaction.svg" alt="" />
+							<h2 style="color: #f55">Reaction</h2>
+						</div>
+						<p><label>80</label> / 100</p>
+					</div>
+					<div class="flex flex-row w-full justify-between justify-center item bg-amber-50 p-3 rounded-lg mb-4">
+						<div class="flex flex-row h-fit">
+							<img src="./assets/images/icon-memory.svg" alt="" />
+							<h2 style="color: #ffb21e">Memory</h2>
+						</div>
+						<p><label>92</label> / 100</p>
+					</div>
+					<div class="flex flex-row w-full justify-between justify-center item bg-emerald-50 p-3 rounded-lg mb-4">
+						<div class="flex flex-row h-fit">
+							<img src="./assets/images/icon-verbal.svg" alt="" />
+							<h2 style="color: #00bb8f">Verbal</h2>
+						</div>
+						<p><label>61</label> / 100</p>
+					</div>
+					<div class="flex flex-row w-full justify-between justify-center item bg-blue-50 p-3 rounded-lg mb-4">
+						<div class="flex flex-row h-fit">
+							<img src="./assets/images/icon-visual.svg" alt="" />
+							<h2 style="color: #1125d6">Visual</h2>
+						</div>
+						<p><label>72</label> / 100</p>
+					</div>
+					<button type="button" class="w-full h-fit rounded-3xl">Continue</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+	</body>
+</html>
